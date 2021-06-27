@@ -229,7 +229,7 @@ function eventNewPlayer(name)
         TFM.bindKeyboard(name, key, true)
     end
     if not players[name] then 
-        players[name] = {size = 1, img = nil, character = nil, facingLeft = false, language = playerList[name].language, imgMenu = {page = 1, selectedImg = nil}}
+        players[name] = {size = 1, img = nil, character = nil, facingLeft = false, language = GET.room.playerList[name].community, imgMenu = {page = 1, selectedImg = nil}}
     end
     updateSizeAll(module.maxSize)
     TFM.chatMessage(translate("welcomeText", name) , name)
