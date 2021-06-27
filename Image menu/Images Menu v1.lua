@@ -251,7 +251,6 @@ function eventChatCommand(name, c)
     if isAdmin(name) then
         if cmd[1] == "max" then
             local size = tonumber(cmd[2])
-            print(size)
             if type(size) == "number" then 
                 module.maxSize = tonumber(cmd[2])
                 for n in next, playerList do 
@@ -313,7 +312,6 @@ function updateImageForAll()
     end
 end
 
-print(math.ceil(#images/6))
 function eventTextAreaCallback(id, name, cb)
     if cb == "closeMenu" then 
         closeMenu(name)
