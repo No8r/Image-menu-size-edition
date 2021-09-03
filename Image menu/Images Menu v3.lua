@@ -72,10 +72,10 @@ local langue = {
         usecolornick     = "<fc> يمكنك تغيير لون اسمك كل %s ثانية [•]</fc>",
 
         waitAMoment      = "<fc> عليك الإنتظار %s ثانية لتتمكن من التغيير مرة أخرى [•]</fc>",
-        chosencolor      = "<fc> بعد ثوانِِِ <font color='#%s'>#%s</font> سيتغير لون اسمك إلى [•]</fc>",
+        chosencolor      = "<fc>بعد ثوانِِِ <font color='#%s'>#%s</font> سيتغير لون اسمك إلى [•]</fc>",
         chosenName       = "<fc>بعد ثوانِِِ <r>%s</r> سيتغير اسمك إلى</fc>",
 
-        error_value      = "<r>يمكنك كتابة قيمة أقل من صفر [•]",
+        error_value      = "<r>لا يمكنك كتابة قيمة أقل من صفر [•]",
 
     },
     en = {
@@ -687,7 +687,12 @@ function eventTextAreaCallback(id, name, cb)
             if isAdmin(name) then
                 ui.addPopup(set[1], 2, translate("change"..tostring(set[2]), name), name, 250, 200, 250, true)
             else
-                TFM.chatMessage(translate("use"..tostring(set[2]), name), name)
+                local numb = settings[set[2]]
+                if not numb or numb > 0 then
+                    TFM.chatMessage(string.format(translate("use"..tostring(set[2]), name), numb), name)
+                else
+                    TFM.chatMessage(string.format(translate("cantuse", name), set[2]), name)
+                end
             end
         end
     end
@@ -830,7 +835,7 @@ function main()
         TFM.killPlayer(n)
     end
     for _,c in pairs(module.commands) do
-		  system.disableChatCommandDisplay(c)
+	system.disableChatCommandDisplay(c)
     end
 end
 
