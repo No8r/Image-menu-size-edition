@@ -173,23 +173,23 @@ local images = {
             {"Green", "178cc11ad00.png", 175.5, 190},
         }
     },
+    {"Plush Mouse", "17a5e248b95.png", 92.5, 95},
     {"Chicken Mouse", "179515fe999.png", 85, 111.5},
-    {"Anime Mouse", "17a5e35092b.png", 140, 245.5},
-    {"Cheese Mouse", "17a5e3ed37f.png", 140, 215},
-    {"Potato Mouse", "17a5e3f5a6a.png", 140, 225},
+    {"Anime Mouse", "17a5e35092b.png", 140, 265.5},
+    {"Cheese Mouse", "17a5e3ed37f.png", 140, 235},
+    {"Potato Mouse", "17a5e3f5a6a.png", 140, 245},
     {"Skeleton", "1789e6b9058.png", 122.5, 170},
-    {"Meli Mouse", "178cbf1ff84.png", 140, 180},
-    {"Rabbit", "178a763048a.png", 105, 220},
+    {"Meli Mouse", "178cbf1ff84.png", 140, 190},
+    {"Rabbit", "178a763048a.png", 105, 230},
     {"Deer", "1792c9cacd8.png", 136.5, 190},
     {"Kangaroo", "178a8fd60a4.png", 132.5, 190},
     {"Dora Mouse", "178ab77286f.png", 140, 190},
     {"Creepy Cupid", "178a8eedcd1.png", 161.5, 190},
-    {"Skelaton Cat", "1792c9cd64e.png", 195, 190},
+    {"Skeleton Cat", "1792c9cd64e.png", 195, 190},
     {"Smallchicken", "1789e74c570.png", 135, 190},
     {"Funny chicken", "17a6c742250.png", 135, 180},
     {"Rubber chicken", "17b40991910.png", 90, 180},
     {"Chicken", "17b4055f0ca.png", 266, 190},
-    {"Scarecrow", "1789e83df76.png", 135, 170},
     {"Dancing Dora", "17a2b117411.png", 100, 180},
     {"Dora", "1789d45e0a4.png", 117, 170},
     {"Boots", "17ba08b9c82.png", 100, 170},
@@ -200,7 +200,7 @@ local images = {
     {"Jerry", "17898047f7a.png", 92.5, 160},
     {"Triangle Jerry", "1789e5aece6.png", 150, 155},
     {"Standing Jerry", "1789e6216c4.png", 98, 170},
-    {"Jerry s look", "17b6e310957.png", 162.5, 180},
+    {"Jerry look", "17b6e310957.png", 162.5, 180},
     {"Jerry looks sad", "17b6e3120ad.png", 112.5, 180},
     {"Jerry Sad", "17b6e30ab74.png", 109.5, 170},
     {"Dancing Jerry", "17b6e30f1c9.png", 74, 190},
@@ -230,7 +230,7 @@ local images = {
     {"Luigi Dab", "17a62b5548a.png", 125, 240},
     {"Yoshi", "17a62b6d22d.png", 120, 180},
     {"Donkey Kong", "17a6d6e01a8.png", 200, 190},
-    {"Sitting Fox", "178f74e11bb.png", 101, 140},
+    {"Sitting Fox", "178f74e11bb.png", 101, 130},
     {"Laughing guy", "179d3a6ea1e.png", 127.5, 180},
     {"Harold", "17a62b71cc2.png", 170, 145},
     {"Hnnnngggg", "17a62b73ca1.png", 160, 170},
@@ -242,33 +242,33 @@ local images = {
     {"Sans", "17a62b5b580.png", 100, 180},
     {"Papyrus", "17a62b5d4fe.png", 100, 190},
     {"Yee", "17a6401be1d.png", 125, 210},
+    {"Garfield", "17a62b5f984.png", 175, 120},
     {"Marge", "17a6d6de0ec.png", 150, 170},
     {"Homer", "17ba2365308.png", 150, 180},
-    {"Garcello", "179d36c4ab3.png", 92.5, 180},
     {"Doge", "17a2b115ca3.png", 109, 180},
     {"Troll Doge", "17a6401f119.png", 109, 190},
     {"Corgi", "17a5f4625d7.png", 125, 125},
-    {"HEYYEYAAEYAAAEYAEYAA", "17a5ed404ac.png", 140, 85},
-    {"Woody", "17a6401d645.png", 130, 250},
+    {"Shaggy", "17a5ed3dd5f.png", 135, 205},
     {"Shrek", "17a5ed420ab.png", 100, 200},
     {"Shrek 2", "17a6c745137.png", 87.5, 180},
     {"Donkey", "17a64037647.png", 75, 230},
     {"Donkey 2", "17a6c740adf.png", 93, 180},
+    {"Woody", "17a6401d645.png", 130, 250},
+    {"HEYYEYAAEYAAAEYAEYAA", "17a5ed404ac.png", 140, 85},
     {"Clown", "17a6d6ecb9a.png", 145, 200},
     {"Gnomed", "17a6d6e47d4.png", 125, 250},
     {"Gordon Ramsay", "17a66d4cae1.png", 175, 170},
     {"Preminger", "17a6d6e2073.png", 125, 260},
     {"Jimmy Neutron", "17a6d6d68d6.png", 120, 260},
-    {"Mouse handle cheese", "17a86f5af88.png", 129.5, 180},
+    {"Mouse holding cheese", "17a86f5af88.png", 129.5, 180},
+    {"Flop Mouse", "17a61380339.png", 160, 50},
+    {"Scarecrow", "1789e83df76.png", 135, 170},
     {"Hiii", "17a2b11ba68.png", 130, 180},
     {"Angelena", "17a2b11d1d9.png", 145, 180},
-    {"Donkey (shrek)", "17a6c740adf.png", 93, 180},
-    {"Heihei", "17a6c742250.png", 135, 180},
     {"Puppet Monkey", "17a6c7439c3.png", 156.5, 180},
     {"Puppet Monkey1", "17a6c7468a7.png", 161, 180},
     {"Puppet Monkey2", "17a6c749789.png", 107.5, 180},
     {"Kermit Frog", "17a6c74802b.png", 143.5, 180},
-    {"Shrek", "17a6c745137.png", 87.5, 180},
     {"Henlo", "17a86f551c3.png", 50, 180},
     {"Bongo Cat", "17a86f59814.png", 145, 110},
     {"Doja cat1", "17a867f8436.png", 95, 180},
@@ -277,7 +277,7 @@ local images = {
     {"Doja cat4", "17a86872509.png", 167.5, 180},
     {"Ariana Grande", "17a86f580a4.png", 164, 180},
     {"Drake", "17a2b11a2f6.png", 189.5, 180},
-    {"Billie Elish", "17abba2a421.png", 95, 180},
+    {"Billie Eilish", "17abba2a421.png", 95, 180},
     {"Kim Kardashian", "17abba25dcf.png", 103, 180},
     {"Jungkook", "17abba2753b.png", 106, 180},
     {"Jimin", "17abba2bb90.png", 111.5, 180},
@@ -295,7 +295,7 @@ local images = {
     {"Pico Maid", "17a6b733ffb.png", 100, 190},
     {"Whitty", "17a6c16e1bc.png", 100, 190},
     {"Cassette Girl", "17a6b8df819.png", 100, 190},
-    {"holded by Spiderman",
+    {"held by Spiderman",
         {
             {"Nothing", "17b554c1dfc.png", 206, 190},
             {"Chicken", "17b554c356f.png", 206, 190},
@@ -309,19 +309,21 @@ local images = {
     {"Spiderman", "1789d2c38cf.png", 74, 170},
     {"Spiderman Love", "17b409a5d5e.png", 140, 190},
     {"Spiderman Confused", "17b7da79a77.png", 200, 190},
+    {"Spongebob", "17a5ed4efff.png", 130, 221},
     {"Spongebob lady", "17b554c9336.png", 100, 190},
     {"Spongebob lady2", "17b7da76b94.png", 90, 190},
     {"Crazy Spongebob", "178a7684993.png", 143, 170},
     {"Patrick", "178a8cc2fa2.png", 113.5, 190},
     {"Patrick2", "17a5ed461a7.png", 110, 182},
-    {"Squidward1", "178c0ae903f.png", 192, 190},
+    {"Squidward", "178c0ae903f.png", 192, 190},
     {"Squidward2", "178c1ea37d2.png", 140, 190},
     {"Squidward3", "17abba28cad.png", 205.5, 180},
     {"Squidward4", "17a6201be33.png", 150, 240},
+    {"Squidward5", "17a6201a6ee.png", 140, 170},
+    {"Mr. Krabs", "17a62b6188e.png", 175, 185},
     {"Fish1", "17897d80b92.png", 50, 150},
     {"Fish2", "17a6c73f36f.png", 100, 180},
     {"Fish3", "17a2b11452f.png", 164.5, 180},
-    {"Mr. Krabs", "17a62b6188e.png", 175, 185},
     {"Cockroach (Spongebob)", "17b7da78305.png", 103, 190},
     {"Pro Cat", "1792c9c4b6b.png", 114.5, 185},
     {"Sad Cat", "17a5ed5409f.png", 150, 220},
@@ -331,9 +333,9 @@ local images = {
     {"Surprised Cat", "178c1dbaa41.png", 175, 190},
     {"Crazy Cat", "17babb03dc9.png", 120, 190},
     {"Stylish Cat", "17babb0553b.png", 272.5, 190},
+    {"Garcello", "179d36c4ab3.png", 92.5, 180},
     {"Penguin", "17b554c7bc4.png", 150, 190},
     {"Yeeh", "17b6e30da57.png", 140, 180},
-
 }
 print("<rose>Total Images : </rose>"..#images)
 
@@ -768,17 +770,17 @@ function eventKeyboard(name, k, d)
     if k == 0 then
         players[name].facingLeft = true
         if d then 
+            updateImage(name)
             players[name].speed = true 
         else
-            updateImage(name)
             players[name].speed = false 
         end
     elseif k == 2 then
         players[name].facingLeft = false
         if d then 
             players[name].speed = true 
-        else
             updateImage(name)
+        else
             players[name].speed = false 
         end
     elseif k == 32 then
