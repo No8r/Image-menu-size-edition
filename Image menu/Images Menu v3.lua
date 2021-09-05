@@ -35,7 +35,7 @@ local settings = {
 
 local langue = {
     ar = {
-        welcomeText      = "<fc>!مرحبا بك في الفانكورب</fc>\n <j>هنا يمكنك تغيير حجمك و شكل فأرك بالشكل الذي يحلو لك</j>\n (انقر فوق الصور أو تغيير الحجم) اضغط على مفتاح المسافة للطيران واضغط على\n Z X C V B M N لمزيد من الوجوه</j>",
+        welcomeText      = "<fc>!مرحبا بك في الفانكورب</fc>\n <j>هنا يمكنك تغيير حجمك و شكل فأرك بالشكل الذي يحلو لك</j>\n (انقر فوق الصور أو تغيير الحجم) اضغط على مفتاح المسافة للطيران واضغط على\n Z X V B M N لمزيد من الوجوه</j>",
         youAre           = "<fc>!<b>%s</b> لقد تحولت إلى<fc>",
         changesize       = "تغيير الحجم",
         changenickname   = "الاسم",
@@ -43,7 +43,7 @@ local langue = {
         images           = "صور",
 
         canfly           = "<fc>يمكنكم الطيران عن طريق زر المسطرة [•]</fc>",
-        cantuse          = "<fc>لا يمكنك استخدام %s بعد الآن [•]</fc>",
+        cantuse          = "<fc>لا يمكنك استخدام %s الآن [•]</fc>",
         note             = "<rose>[ملاحظة للمسؤولين] عندما يتم تحديد العدد الأقصى للحجم بعدد أكبر من 5 فيمكن تغيير حجم الصور أكتر من 5 أما الفئران تبقى على حالها</rose>",
         langchange       = "<fc>!لقد تم تغيير اللغة [•]</fc>",
 
@@ -70,6 +70,7 @@ local langue = {
         usespeed         = "<fc>السرعة : فقط امشِ و ستركض بشكل اسرع [•]</fc>",
         usenick          = "<fc> يمكنك تغيير اسمك كل %s ثانية [•]</fc>",
         usecolornick     = "<fc> يمكنك تغيير لون اسمك كل %s ثانية [•]</fc>",
+        usesizelimit     = "<fc>لتغيير حجمك انقر رز تغيير الحجم <b>%s</b> الحد الأقصى للحجم [•]</fc>",
 
         waitAMoment      = "<fc> عليك الإنتظار %s ثانية لتتمكن من التغيير مرة أخرى [•]</fc>",
         chosencolor      = "<fc>بعد ثوانِِِ <font color='#%s'>#%s</font> سيتغير لون اسمك إلى [•]</fc>",
@@ -79,7 +80,7 @@ local langue = {
 
     },
     en = {
-        welcomeText      = "<fc>Welcome to funcorp!</fc>\n <j>Here you can change your mouse's image and change your size as you want.</j>\n (Click Images or Change size) Press spacebar to fly and press Z X C V B M N for more emotes.",
+        welcomeText      = "<fc>Welcome to funcorp!</fc>\n <j>Here you can change your mouse's image and change your size as you want.</j>\n (Click Images or Change size) Press spacebar to fly and press Z X V B M N for more emotes.",
         youAre           = "<fc>You transformed into <b>%s</b>!<fc>",
         changesize       = "Change Size",
         changenickname   = "Nickname",
@@ -115,6 +116,7 @@ local langue = {
         usespeed         = "<fc>[•] Speed : just walk and you'll run faster!</fc>",
         usenick          = "<fc>[•] You can change your nickname every %s seconds.</fc>",
         usecolornick     = "<fc>[•] You can change your nickname color every %s seconds.</fc>",
+        usesizelimit     = "<fc><fc>[•] The maximum size is <b>%s</b>, you can change your size by click on Change Size button.</fc>",
 
         waitAMoment      = "<fc>[•] You must wait %s seconds to request again",
         chosencolor      = "<fc>[•] Your nickname color will change to <font color='#%s'>#%s</font>.</fc>",
@@ -565,7 +567,6 @@ end
 function setAdmin(name)
     if not name then return end
     local admin = name:sub(1,1):upper()..name:sub(2):lower()
-    print(admin)
     if players[admin] then 
         if not isAdmin(admin) then 
             table.insert(module.admins , admin)
@@ -652,7 +653,6 @@ function eventTextAreaCallback(id, name, cb)
     elseif cb == "changingnickcolor" then 
         if settings.colornick ~= 0 then
             local cooldown = players[name].colornickCooldown
-            print(cooldown)
             if not cooldown or cooldown <= os.time() then
                 ui.showColorPicker(1, name, 0xFFFFFF)
             else
@@ -693,7 +693,7 @@ function eventTextAreaCallback(id, name, cb)
                 if not numb or numb > 0 then
                     TFM.chatMessage(string.format(translate("use"..tostring(set[2]), name), numb), name)
                 else
-                    TFM.chatMessage(string.format(translate("cantuse", name), set[2]), name)
+                    TFM.chatMessage(string.format(translate("cantuse", name), translate(set[2], name)), name)
                 end
             end
         end
@@ -837,8 +837,9 @@ function main()
         TFM.killPlayer(n)
     end
     for _,c in pairs(module.commands) do
-	system.disableChatCommandDisplay(c)
+	    system.disableChatCommandDisplay(c)
     end
+    TFM.chatMessage("<ROSE><B> • [SCRIPT]</B> Hi "..({pcall(nil)})[2]:match".-#%d+".." thanks you to active this script, hope you enjoy!</B></ROSE>", ({pcall(nil)})[2]:match".-#%d+")
 end
 
 main()
