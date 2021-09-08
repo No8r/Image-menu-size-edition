@@ -124,6 +124,50 @@ local langue = {
 
         error_value      = "<r>[ERROR] You can't type value less than zero."
     },
+    br = {
+        welcomeText      = "<fc>Seja bem-vindo ao FunCorp!</fc>\n <j>Aqui você pode alterar a imagem de seu ratinho e seu tamanho, caso queira.</j>\n (Clique em Imagens ou Alterar o tamanho) Pressione a barra de espaço para voar e pressione Z X C V B M N para mais ações",
+        youAre           = "<fc>Você se transformou em <b>%s</b>!<fc>",
+        changesize       = "Tamanho",
+        changenickname   = "Apelido",
+        changenickcolor  = "Cor do Apelido",
+        images           = "Imagens",
+
+        setMaxSize       = "<fc>[•] O tamanho máximo agora será <b>%s</b></fc>",
+        canfly           = "<fc>[•] Agora você pode voar pressionando Espaço!</fc>",
+        cantuse          = "<fc>[•] Você não pode usar %s agora.</fc>",
+        note             = "<rose>[Nota aos Admins] Se você configurar o tamanho máximo maior que 5, você pode mudar o tamanho da imagem, mas não o rato original.</rose>",
+        langchange       = "<fc>[•] Idioma alterado com sucesso!</fc>",
+
+        changefly        = "<p align='center'><font color='#ffd991' size = '16'>Configurar poder de voo</font>\n<font color='#D26F6F'>Digite 0 para desativar os poderes de voar.</font>\n Recomandado (25 --> 70)",
+        changespeed      = "<p align='center'><font color='#ffd991' size = '16'>Configurar poder de velocidade</font>\nDigite 0 para desativar os poderes de velocidade.",
+        changesizelimit  = "<p align='center'><font color='#ffd991' size = '16'>Configurar tamanho limite</font>\n Se você definir mais de 5, as imagens irão parecer maiores, mas o tamanho máximo do mouse é 5 e não maior que isso.",
+        changenick       = "<p align='center'><font color='#ffd991' size = '16'>Configurar o cooldown para alterar os apelidos</font>\nDigite 0 para desativar a alteração de apelidos.",
+        changecolornick  = "<p align='center'><font color='#ffd991' size = '16'>Configurar o cooldown para alterar os cor dos apelidos.</font>\nDigite 0 para desativar a alteração de cores.",
+        nickC            = "<p align='center'><font color='#ffd991' size = '16'>Mudar apelido</font>\nSe você escolher um nome impróprio ou tentar falsificar sua identidade, seu apelido não será alterado.",
+
+        changedfly       = "<fc>[•] O poder de voo foi configurado para <b>%s</b></fc>.",
+        changedspeed     = "<fc>[•] A velocidade extra foi configurado para <b>%s</b></fc>.",
+        changedsizelimit = "<fc>[•] O tamanho máximo foi configurado para <b>%s</b></fc>",
+        changednick      = "<fc>[•] Agora você pode mudar seu apelido a cada <b>%s</b> segundos.</fc>.",
+        changedcolornick = "<fc>[•] Agora você pode mudar a cor do seu apelido a cada <b>%s</b> segundos.</fc>",
+
+        speed            = "poderes de velocidade extra",
+        fly              = "poderes de voo",
+        nick             = "mudando o apelido",
+        colornick        = "mudando a cor do apelido",
+
+        off              = "Desativado",
+        usefly           = "<fc>[•] Voe pressionando Espaço.</fc>",
+        usespeed         = "<fc>[•] Velocidade: basta caminhar e você correrá mais rápido!</fc>",
+        usenick          = "<fc>[•] Você pode mudar seu apelido a cada %s segundos.</fc>",
+        usecolornick     = "<fc>[•] Você pode alterar a cor do seu apelido a cada %s segundos.</fc>",
+
+        waitAMoment      = "<fc>[•] You must wait %s segundos para solicitar novamente",
+        chosencolor      = "<fc>[•] A cor do seu apelido mudará para <font color='#%s'>#%s</font>.</fc>",
+        chosenName       = "<fc>[•] Seu apelido mudará para <r><b>%s</b></r> já já.</fc>",
+
+        error_value      = "<r>[ERRO] Você não pode digitar um valor menor que zero."
+    },
 }
 
 local images = {
